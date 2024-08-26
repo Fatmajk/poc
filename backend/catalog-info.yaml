@@ -4,10 +4,9 @@ metadata:
   name: backend
   description: An example of a Backend application.
   # Example for optional annotations
-  # annotations:
-  #   github.com/project-slug: backstage/backstage
-  #   backstage.io/techdocs-ref: dir:.
+  annotations:
+    github.com/project-slug: Fatmajk/poc
 spec:
-  type: api
+  type: other
   owner: Fatmajk
   lifecycle: experimental
