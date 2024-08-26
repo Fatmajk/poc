@@ -2,7 +2,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: backend
-  description: An example of a Backend application.
+  description: Webstore API
   # Example for optional annotations
   annotations:
     github.com/project-slug: Fatmajk/poc
