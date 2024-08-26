@@ -7,6 +7,6 @@ metadata:
   annotations:
     github.com/project-slug: Fatmajk/poc
 spec:
-  type: other
+  type: website
   owner: Fatmajk
   lifecycle: experimental
