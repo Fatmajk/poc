@@ -4,9 +4,8 @@ metadata:
   name: backstage
   description: Backstage portal
   # Example for optional annotations
-  # annotations:
-  #   github.com/project-slug: backstage/backstage
-  #   backstage.io/techdocs-ref: dir:.
+  annotations:
+    github.com/project-slug: Fatmajk/poc
 spec:
   type: website
   owner: Fatmajk
