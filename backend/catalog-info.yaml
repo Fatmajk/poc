@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backend
+  annotations:
+    github.com/project-slug: Fatmajk/poc
+spec:
+  type: other
+  lifecycle: unknown
