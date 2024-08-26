@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: frontend
+  description: An example of a Backend application.
+  # Example for optional annotations
+  annotations:
+    github.com/project-slug: Fatmajk/poc
+spec:
+  type: other
+  owner: Fatmajk
+  lifecycle: experimental
