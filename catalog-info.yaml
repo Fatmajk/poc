@@ -4,7 +4,7 @@ kind: System
 metadata:
   name: poc
 spec:
-  owner: fatmajk
+  owner: dev-team
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -14,7 +14,7 @@ metadata:
 spec:
   type: website
   lifecycle: experimental
-  owner: fatmajk
+  owner: dev-team
   system: poc
   consumesApis: [webstore-api]
 ---
@@ -26,7 +26,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: experimental
-  owner: fatmajk
+  owner: dev-team
   system: poc
   definition: |
     openapi: "3.0.0"
