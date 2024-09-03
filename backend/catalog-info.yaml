@@ -6,7 +6,6 @@ spec:
   owner: Fatmajk
 ---
 apiVersion: v1
-apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: frontend
@@ -20,3 +19,17 @@ spec:
   system: poc
   lifecycle: experimental
   #providesApis: [example-grpc-api]
+---
+apiVersion: v2
+kind: API
+metadata:
+  name: backend
+  description: Webstore API
+  description: Webstore
+  annotations:
+    github.com/project-slug: Fatmajk/poc
+spec:
+  type: unknown
+  owner: Fatmajk
+  system: poc
+  lifecycle: experimental
