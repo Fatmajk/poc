@@ -17,15 +17,3 @@ spec:
   lifecycle: experimental
   owner: fatmajk
   system: poc
-  providesApis: [backend]
----
-# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-api
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: backend
-spec:
-  type: grpc
-  lifecycle: experimental
-  owner: fatmajk
-  system: poc
