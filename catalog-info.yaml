@@ -1,13 +1,13 @@
 ---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
-apiVersion: backstage.io/v1alpha1
+apiVersion: v1
 kind: System
 metadata:
   name: poc
 spec:
   owner: Fatmajk
 ---
-apiVersion: backstage.io/v1alpha1
+apiVersion: v1
 kind: Component
 metadata:
   name: frontend
