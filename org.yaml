@@ -1,0 +1,29 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: dev-team
+  description: The dev team
+spec:
+  type: team
+  profile:
+    displayName: Dev Team
+  children: []
+  members: [fatmajk, bobby]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: fatmajk
+spec:
+  profile:
+    displayName: Michael K
+  memberOf: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: bobby
+spec:
+  profile:
+    displayName: Bob Berg
+  memberOf: []
