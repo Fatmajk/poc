@@ -1,4 +1,4 @@
-eam---
+---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
 apiVersion: backstage.io/v1alpha1
 kind: System
@@ -6,39 +6,6 @@ metadata:
   name: poc
 spec:
   owner: fatmajk
----
-# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: team-dev
-  description: The dev team
-spec:
-  type: team
-  profile:
-    displayName: Dev Team
-  members: [fatmajk, bobby]
-  children: []
----
-# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
-apiVersion: backstage.io/v1alpha1
-kind: User
-metadata:
-  name: fatmajk
-spec:
-  profile:
-    displayName: Michael K
-  memberOf: [team-dev]
----
-# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
-apiVersion: backstage.io/v1alpha1
-kind: User
-metadata:
-  name: bobby
-spec:
-  profile:
-    displayName: bob Berg
-  memberOf: [team-dev]
 ---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
 apiVersion: backstage.io/v1alpha1
@@ -80,3 +47,36 @@ spec:
       /customers:
         get:
           summary: List all customers
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-dev
+  description: The dev team
+spec:
+  type: team
+  profile:
+    displayName: Dev Team
+  members: [fatmajk, bobby]
+  children: []
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: fatmajk
+spec:
+  profile:
+    displayName: Michael K
+  memberOf: [team-dev]
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: bobby
+spec:
+  profile:
+    displayName: bob Berg
+  memberOf: [team-dev]
