@@ -18,7 +18,7 @@ spec:
   lifecycle: experimental
   owner: Fatmajk
   system: poc
-  providesApis: [backend]
+  consumesApis: [backend-api]
 ---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-api
 apiVersion: backstage.io/v1alpha1
