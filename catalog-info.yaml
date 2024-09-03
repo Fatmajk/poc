@@ -11,6 +11,8 @@ kind: Component
 metadata:
   name: webstore
   description: Webstore
+  annotations:
+    github.com/project-slug: fatmajk/poc
 spec:
   type: website
   lifecycle: experimental
@@ -23,6 +25,8 @@ kind: API
 metadata:
   name: webstore-api
   description: Webstore API
+  annotations:
+    github.com/project-slug: fatmajk/poc
 spec:
   type: openapi
   lifecycle: experimental
