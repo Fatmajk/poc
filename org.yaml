@@ -1,4 +1,22 @@
 apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: fatmajk
+spec:
+  profile:
+    displayName: Michael K
+  memberOf: [dev-team]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: bobby
+spec:
+  profile:
+    displayName: Bob Berg
+  memberOf: [dev-team]
+---
+apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: dev-team
@@ -9,21 +27,3 @@ spec:
     displayName: Dev Team
   children: []
   members: [fatmajk, bobby]
----
-apiVersion: backstage.io/v1alpha1
-kind: User
-metadata:
-  name: fatmajk
-spec:
-  profile:
-    displayName: Michael K
-  memberOf: []
----
-apiVersion: backstage.io/v1alpha1
-kind: User
-metadata:
-  name: bobby
-spec:
-  profile:
-    displayName: Bob Berg
-  memberOf: []
