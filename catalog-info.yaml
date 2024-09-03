@@ -41,21 +41,3 @@ spec:
       /products:
         get:
           summary: List all products
----
-apiVersion: backstage.io/v1alpha1
-kind: User
-metadata:
-  name: fatmajk
-spec:
-  profile:
-    displayName: Michael K
-  memberOf: []
----
-apiVersion: backstage.io/v1alpha1
-kind: User
-metadata:
-  name: bobby
-spec:
-  profile:
-    displayName: bob Berg
-  memberOf: []
