@@ -1,5 +1,4 @@
 ---
-# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
@@ -7,7 +6,6 @@ metadata:
 spec:
   owner: fatmajk
 ---
-# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
@@ -20,7 +18,6 @@ spec:
   system: poc
   consumesApis: [webstore-api]
 ---
-# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-api
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
@@ -48,7 +45,6 @@ spec:
         get:
           summary: List all customers
 ---
-# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
@@ -61,7 +57,6 @@ spec:
   members: [fatmajk, bobby]
   children: []
 ---
-# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
@@ -71,7 +66,6 @@ spec:
     displayName: Michael K
   memberOf: [team-dev]
 ---
-# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
