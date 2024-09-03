@@ -1,12 +1,32 @@
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: poc
+spec:
+  owner: Fatmajk
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: backend
-  description: Webstore API
-  # Example for optional annotations
-  annotations:
-    github.com/project-slug: Fatmajk/poc
+  name: frontend
 spec:
-  type: API
-  owner: Fatmajk
+  type: website
   lifecycle: experimental
+  owner: Fatmajk
+  system: poc
+  providesApis: [backend]
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-api
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: backend
+spec:
+  type: grpc
+  lifecycle: experimental
+  owner: Fatmajk
+  system: poc
+  
