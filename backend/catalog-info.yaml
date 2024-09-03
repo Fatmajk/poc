@@ -12,6 +12,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: frontend
+  description: Webstore
 spec:
   type: website
   lifecycle: experimental
@@ -21,13 +22,15 @@ spec:
 ---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-api
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: API
 metadata:
   name: backend
+  description: Webstore API
 spec:
-  type: grpc
+  type: openapi
   lifecycle: experimental
   owner: Fatmajk
   system: poc
-  definition: none
+  definition: openapi
+    $text: https://petstore.swagger.io/v2/swagger.json
   
