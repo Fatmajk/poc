@@ -1,3 +1,4 @@
+---
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
@@ -14,15 +15,4 @@ spec:
   lifecycle: experimental
   owner: fatmajk
   system: poc
-  #providesApis: [example-grpc-api]
----
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: backend
-spec:
-  type: grpc
-  lifecycle: experimental
-  owner: fatmajk
-  system: poc
-  
+  #providesApis: [example-grpc-api]  
