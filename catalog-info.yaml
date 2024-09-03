@@ -20,18 +20,3 @@ spec:
   owner: Fatmajk
   system: poc
   lifecycle: experimental
----
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: frontend
-  description: Webstore
-  # Example for optional annotations
-  #annotations:
-    #github.com/project-slug: Fatmajk/poc
-spec:
-  type: website
-  owner: Fatmajk
-  system: poc
-  lifecycle: experimental
-
