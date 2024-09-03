@@ -9,10 +9,9 @@ apiVersion: v1
 kind: Component
 metadata:
   name: frontend
-  description: Webstore API
   description: Webstore
-  annotations:
-    github.com/project-slug: Fatmajk/poc
+  #annotations:
+    #github.com/project-slug: Fatmajk/poc
 spec:
   type: website
   owner: Fatmajk
@@ -25,9 +24,8 @@ kind: API
 metadata:
   name: backend
   description: Webstore API
-  description: Webstore
-  annotations:
-    github.com/project-slug: Fatmajk/poc
+  #annotations:
+    #github.com/project-slug: Fatmajk/poc
 spec:
   type: unknown
   owner: Fatmajk
