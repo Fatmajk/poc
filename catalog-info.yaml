@@ -12,7 +12,7 @@ apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: dev-team
-  description: The team
+  description: The dev team
 spec:
   type: team
   profile:
