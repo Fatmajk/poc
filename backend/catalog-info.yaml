@@ -17,4 +17,25 @@ spec:
   lifecycle: experimental
   owner: fatmajk
   system: poc
-  #providesApis: [example-grpc-api]  
+  providesApis: [backend]
+---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-api
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: backend
+spec:
+  type: grpc
+  lifecycle: experimental
+  owner: fatmajk
+  system: poc
+  definition: |
+    syntax = "proto3";
+
+    service Exampler {
+      rpc Example (ExampleMessage) returns (ExampleMessage) {};
+    }
+
+    message ExampleMessage {
+      string example = 1;
+    };
