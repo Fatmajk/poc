@@ -29,13 +29,3 @@ spec:
   lifecycle: experimental
   owner: fatmajk
   system: poc
-  definition: |
-    syntax = "proto3";
-
-    service Exampler {
-      rpc Example (ExampleMessage) returns (ExampleMessage) {};
-    }
-
-    message ExampleMessage {
-      string example = 1;
-    };
