@@ -1,30 +1,27 @@
 ---
-# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: poc
 spec:
-  owner: Fatmajk
+  owner: fatmajk
 ---
-# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: frontend
+  name: webstore
   description: Webstore
 spec:
   type: website
   lifecycle: experimental
-  owner: Fatmajk
+  owner: fatmajk
   system: poc
-  consumesApis: [backend-api]
+  consumesApis: [webstore-api]
 ---
-# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-api
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: backend-api
+  name: webstore-api
   description: Webstore API
 spec:
   type: openapi
@@ -44,3 +41,21 @@ spec:
       /products:
         get:
           summary: List all products
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: fatmajk
+spec:
+  profile:
+    displayName: Michael K
+  memberOf: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: bobby
+spec:
+  profile:
+    displayName: bob Berg
+  memberOf: []
