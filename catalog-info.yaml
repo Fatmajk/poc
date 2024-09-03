@@ -8,15 +8,13 @@ spec:
   owner: Fatmajk
 ---
 apiVersion: backstage.io/v1alpha1
-kind: API
+kind: Component
 metadata:
-  name: backend
+  name: frontend
   description: Webstore API
-  # Example for optional annotations
-  #annotations:
-    #github.com/project-slug: Fatmajk/poc
 spec:
-  type: API
+  type: website
   owner: Fatmajk
   system: poc
   lifecycle: experimental
+  #providesApis: [example-grpc-api]
