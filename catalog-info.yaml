@@ -12,6 +12,8 @@ kind: Component
 metadata:
   name: frontend
   description: Webstore API
+  annotations:
+    github.com/project-slug: Fatmajk/poc
 spec:
   type: website
   owner: Fatmajk
