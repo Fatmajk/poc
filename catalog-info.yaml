@@ -1,5 +1,3 @@
----
-# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
 apiVersion: v1
 kind: System
 metadata:
