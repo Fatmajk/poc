@@ -1,4 +1,5 @@
 ---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
 apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
@@ -6,6 +7,7 @@ metadata:
 spec:
   owner: fatmajk
 ---
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
