@@ -14,7 +14,7 @@ spec:
   lifecycle: experimental
   owner: fatmajk
   system: poc
-  providesApis: [example-grpc-api]
+  #providesApis: [example-grpc-api]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: API
