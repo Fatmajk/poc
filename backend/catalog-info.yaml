@@ -8,7 +8,7 @@ spec:
   owner: Fatmajk
 ---
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: API
 metadata:
   name: backend
   description: Webstore API
@@ -35,3 +35,4 @@ spec:
   system: poc
   lifecycle: experimental
   providesApis: [backend]
+---
