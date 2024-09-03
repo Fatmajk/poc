@@ -44,18 +44,7 @@ spec:
       /customers:
         get:
           summary: List all customers
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: team-dev
-  description: The dev team
-spec:
-  type: team
-  profile:
-    displayName: Dev Team
-  members: [fatmajk, bobby]
-  children: []
+
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
