@@ -41,3 +41,8 @@ spec:
       /products:
         get:
           summary: List all products
+      /customers:
+        get:
+          summary: List all customers
+        post:
+          summary: Create new customer
