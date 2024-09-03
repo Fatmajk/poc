@@ -24,13 +24,13 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: backend
-  description: Webstore API
+  name: artist-api
+  description: Retrieve artist details
 spec:
   type: openapi
-  lifecycle: experimental
-  owner: Fatmajk
-  system: poc
+  lifecycle: production
+  owner: artist-relations-team
+  system: artist-engagement-portal
   definition: |
     openapi: "3.0.0"
     info:
@@ -43,4 +43,4 @@ spec:
     paths:
       /artists:
         get:
-          summary: List all artists  
+          summary: List all artists
