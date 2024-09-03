@@ -41,9 +41,6 @@ spec:
       /products:
         get:
           summary: List all products
-      /customers:
-        get:
-          summary: List all customers
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
