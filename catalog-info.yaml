@@ -25,7 +25,7 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: fatmajk
-spec: 
+spec:
   profile:
     displayName: Michael K
   memberOf: [dev-team]
@@ -35,9 +35,9 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: bobby
-spec: 
+spec:
   profile:
-    displayName: Bob Berg
+    displayName: bob Berg
   memberOf: [dev-team]
 ---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
