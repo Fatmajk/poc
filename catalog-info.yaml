@@ -44,7 +44,6 @@ spec:
       /customers:
         get:
           summary: List all customers
-
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -53,7 +52,7 @@ metadata:
 spec:
   profile:
     displayName: Michael K
-  memberOf: [team-dev]
+  memberOf: []
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -62,4 +61,4 @@ metadata:
 spec:
   profile:
     displayName: bob Berg
-  memberOf: [team-dev]
+  memberOf: []
