@@ -28,8 +28,6 @@ metadata:
 spec: 
   profile:
     displayName: Michael K
-    email: michael.k@example.com
-    picture: https://example.com/staff/michael-with-party-hat.jpeg
   memberOf: [dev-team]
 ---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-system
@@ -40,8 +38,6 @@ metadata:
 spec: 
   profile:
     displayName: Bob Berg
-    email: bob.berg@example.com
-    picture: https://example.com/staff/bob-with-party-hat.jpeg
   memberOf: [dev-team]
 ---
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
