@@ -17,6 +17,33 @@ spec:
   memberOf: [dev-team]
 ---
 apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: kalleman
+spec:
+  profile:
+    displayName: Kalle Eriksson
+  memberOf: [infra]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: julle84
+spec:
+  profile:
+    displayName: Julia Jakobsson
+  memberOf: [infra]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: bamse
+spec:
+  profile:
+    displayName: Bamse Eriksson
+  memberOf: [security]
+---
+apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: dev-team
@@ -27,3 +54,27 @@ spec:
     displayName: Dev Team
   children: []
   members: [fatmajk, bobby]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: infra
+  description: The infrastructure team
+spec:
+  type: team
+  profile:
+    displayName: Infra team
+  children: []
+  members: [kalleman, julle84]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: security
+  description: The Security team
+spec:
+  type: team
+  profile:
+    displayName: Security team
+  children: []
+  members: [bamse]
