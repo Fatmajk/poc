@@ -13,7 +13,7 @@ metadata:
   description: Webstore
   annotations:
     github.com/project-slug: fatmajk/poc
-    backstage.io/techdocs-ref: value
+    backstage.io/techdocs-ref: https://github.com/Fatmajk/poc/tree/main/docs
 spec:
   type: website
   lifecycle: experimental
