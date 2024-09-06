@@ -4,7 +4,7 @@ kind: System
 metadata:
   name: poc
 spec:
-  owner: dev-team
+  owner: security
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
