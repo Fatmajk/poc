@@ -15,6 +15,10 @@ metadata:
     github.com/project-slug: fatmajk/poc
     backstage.io/techdocs-ref: dir:./docs
     #backstage.io/techdocs-ref: url:https://github.com/Fatmajk/poc/tree/main/docs
+  links:
+    - url: https://www.google.com
+      title: Google
+      icon: search
 spec:
   type: website
   lifecycle: experimental
