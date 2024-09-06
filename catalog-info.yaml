@@ -19,6 +19,9 @@ metadata:
     - url: https://www.google.com
       title: Google
       icon: search
+    - url: https://github.com/Fatmajk/poc
+      title: Github
+      icon: catalog
 spec:
   type: website
   lifecycle: experimental
