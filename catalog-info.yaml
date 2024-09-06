@@ -37,7 +37,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: experimental
-  owner: user:fatmajk
+  owner: dev-team
   system: poc
   definition: |
     openapi: "3.0.0"
