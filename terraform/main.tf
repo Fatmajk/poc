@@ -13,12 +13,6 @@ provider "aws" {
   region = "eu-central-1"
 }
 
-resource "aws_ssm_parameter" "project_name" {
-  name = "project_name"
-  type = "String"
-  value = "poc-backstage"
-}
-
 resource "aws_instance" "app_server" {
   ami           = "ami-04f76ebf53292ef4d"
   instance_type = "t2.micro"
