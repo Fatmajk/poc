@@ -12,3 +12,5 @@ A sample backend API written in Kotlin that is used as initial configuation for 
 
 ## Frontend (web)
 A sample backend application written in Vue that is used as initial configuation for Backstage.
+
+## Refs
