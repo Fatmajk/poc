@@ -20,6 +20,11 @@ provider "aws" {
   region = "eu-central-1"
 }
 
+variable "tag_name" {
+  type        = string
+  default     = "Backstage"
+}
+
 resource "aws_instance" "app_server" {
   ami           = "ami-04f76ebf53292ef4d"
   instance_type = "t2.micro"
@@ -27,6 +32,6 @@ resource "aws_instance" "app_server" {
   subnet_id              = "subnet-03bad56679c8d253c"
 
   tags = {
-    Name = "BackstageServerInstance"
+    Name = var.tag_name
   }
 }
