@@ -53,6 +53,52 @@ spec:
   consumesApis: [webstore-api-2]
 ---
 apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: webstore3
+  description: Webstore 3
+  annotations:
+    github.com/project-slug: fatmajk/poc
+    backstage.io/techdocs-ref: dir:./docs
+    #backstage.io/techdocs-ref: url:https://github.com/Fatmajk/poc/tree/main/docs
+  links:
+    - url: https://www.google.com
+      title: Google
+      icon: search
+    - url: https://github.com/Fatmajk/poc
+      title: Github
+      icon: catalog
+spec:
+  type: website
+  lifecycle: experimental
+  owner: dev-team
+  system: poc
+  consumesApis: [webstore-api-3]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: webstore4
+  description: Webstore 4
+  annotations:
+    github.com/project-slug: fatmajk/poc
+    backstage.io/techdocs-ref: dir:./docs
+    #backstage.io/techdocs-ref: url:https://github.com/Fatmajk/poc/tree/main/docs
+  links:
+    - url: https://www.google.com
+      title: Google
+      icon: search
+    - url: https://github.com/Fatmajk/poc
+      title: Github
+      icon: catalog
+spec:
+  type: website
+  lifecycle: experimental
+  owner: dev-team
+  system: poc
+  consumesApis: [webstore-api-4]
+---
+apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: webstore-api
@@ -144,6 +190,180 @@ kind: API
 metadata:
   name: webstore-api-4
   description: Webstore API 4
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: dev-team
+  system: poc
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.0.0
+      title: Webstore API
+      license:
+        name: MIT
+    servers:
+      - url: http://localhost:8080/api/v1/webstore
+    paths:
+      /products:
+        get:
+          summary: List all products
+      /customers:
+        get:
+          summary: List all customers
+        post:
+          summary: Create new customer
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: webstore-api-5
+  description: Webstore API 5
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: dev-team
+  system: poc
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.0.0
+      title: Webstore API
+      license:
+        name: MIT
+    servers:
+      - url: http://localhost:8080/api/v1/webstore
+    paths:
+      /products:
+        get:
+          summary: List all products
+      /customers:
+        get:
+          summary: List all customers
+        post:
+          summary: Create new customer
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: webstore-api-6
+  description: Webstore API 6
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: dev-team
+  system: poc
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.0.0
+      title: Webstore API
+      license:
+        name: MIT
+    servers:
+      - url: http://localhost:8080/api/v1/webstore
+    paths:
+      /products:
+        get:
+          summary: List all products
+      /customers:
+        get:
+          summary: List all customers
+        post:
+          summary: Create new customer
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: webstore-api-7
+  description: Webstore API 7
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: dev-team
+  system: poc
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.0.0
+      title: Webstore API
+      license:
+        name: MIT
+    servers:
+      - url: http://localhost:8080/api/v1/webstore
+    paths:
+      /products:
+        get:
+          summary: List all products
+      /customers:
+        get:
+          summary: List all customers
+        post:
+          summary: Create new customer
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: webstore-api-8
+  description: Webstore API 8
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: dev-team
+  system: poc
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.0.0
+      title: Webstore API
+      license:
+        name: MIT
+    servers:
+      - url: http://localhost:8080/api/v1/webstore
+    paths:
+      /products:
+        get:
+          summary: List all products
+      /customers:
+        get:
+          summary: List all customers
+        post:
+          summary: Create new customer
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: webstore-api-9
+  description: Webstore API 9
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: dev-team
+  system: poc
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.0.0
+      title: Webstore API
+      license:
+        name: MIT
+    servers:
+      - url: http://localhost:8080/api/v1/webstore
+    paths:
+      /products:
+        get:
+          summary: List all products
+      /customers:
+        get:
+          summary: List all customers
+        post:
+          summary: Create new customer
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: webstore-api-10
+  description: Webstore API 10
 spec:
   type: openapi
   lifecycle: experimental
