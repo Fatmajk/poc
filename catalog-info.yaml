@@ -70,7 +70,7 @@ metadata:
       icon: catalog
 spec:
   type: website
-  lifecycle: experimental
+  lifecycle: deprecated
   owner: dev-team
   system: poc
   consumesApis: [webstore-api-3]
@@ -221,7 +221,7 @@ metadata:
   description: Webstore API 5
 spec:
   type: openapi
-  lifecycle: experimental
+  lifecycle: deprecated
   owner: dev-team
   system: poc
   definition: |
@@ -250,7 +250,7 @@ metadata:
   description: Webstore API 6
 spec:
   type: openapi
-  lifecycle: experimental
+  lifecycle: deprecated
   owner: dev-team
   system: poc
   definition: |
@@ -279,7 +279,7 @@ metadata:
   description: Webstore API 7
 spec:
   type: openapi
-  lifecycle: experimental
+  lifecycle: deprecated
   owner: dev-team
   system: poc
   definition: |
@@ -308,7 +308,7 @@ metadata:
   description: Webstore API 8
 spec:
   type: openapi
-  lifecycle: experimental
+  lifecycle: deprecated
   owner: dev-team
   system: poc
   definition: |
