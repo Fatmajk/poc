@@ -358,32 +358,3 @@ spec:
           summary: List all customers
         post:
           summary: Create new customer
----
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: webstore-api-10
-  description: Webstore API 10
-spec:
-  type: openapi
-  lifecycle: experimental
-  owner: dev-team
-  system: poc
-  definition: |
-    openapi: "3.0.0"
-    info:
-      version: 1.0.0
-      title: Webstore API
-      license:
-        name: MIT
-    servers:
-      - url: http://localhost:8080/api/v1/webstore
-    paths:
-      /products:
-        get:
-          summary: List all products
-      /customers:
-        get:
-          summary: List all customers
-        post:
-          summary: Create new customer
